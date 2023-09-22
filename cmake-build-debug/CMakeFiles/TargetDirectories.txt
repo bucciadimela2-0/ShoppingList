@@ -1,7 +1,0 @@
-/Users/kepler/CLionProjects/untitled4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/kepler/CLionProjects/untitled4/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/kepler/CLionProjects/untitled4/cmake-build-debug/CMakeFiles/test.dir
-/Users/kepler/CLionProjects/untitled4/cmake-build-debug/CMakeFiles/run_tests.dir
-/Users/kepler/CLionProjects/untitled4/cmake-build-debug/CMakeFiles/untitled4.dir
-/Users/kepler/CLionProjects/untitled4/cmake-build-debug/CMakeFiles/run_tests_autogen.dir
-/Users/kepler/CLionProjects/untitled4/cmake-build-debug/CMakeFiles/untitled4_autogen.dir
