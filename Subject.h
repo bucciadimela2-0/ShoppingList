@@ -1,0 +1,21 @@
+//
+// Created by Martina Buccioni on 21/07/23.
+//
+
+#ifndef UNTITLED2_SUBJECT_H
+#define UNTITLED2_SUBJECT_H
+
+
+#include "Observer.h"
+#include "Item.h"
+
+class Subject {
+public:
+    virtual void attach(Observer* observer) = 0;
+    virtual void detach(Observer* observer) = 0;
+    virtual void notify() = 0;
+
+};
+
+
+#endif //UNTITLED2_SUBJECT_H
