@@ -54,10 +54,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"
   "/opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake"
   "/opt/anaconda3/lib/cmake/Qt5Core/Qt5CoreMacros.cmake"
-  "/usr/local/Cellar/googletest/1.13.0/lib/cmake/GTest/GTestConfig.cmake"
-  "/usr/local/Cellar/googletest/1.13.0/lib/cmake/GTest/GTestConfigVersion.cmake"
-  "/usr/local/Cellar/googletest/1.13.0/lib/cmake/GTest/GTestTargets-release.cmake"
-  "/usr/local/Cellar/googletest/1.13.0/lib/cmake/GTest/GTestTargets.cmake"
+  "/usr/local/lib/cmake/GTest/GTestConfig.cmake"
+  "/usr/local/lib/cmake/GTest/GTestConfigVersion.cmake"
+  "/usr/local/lib/cmake/GTest/GTestTargets-noconfig.cmake"
+  "/usr/local/lib/cmake/GTest/GTestTargets.cmake"
   )
 
 # The corresponding makefile is:

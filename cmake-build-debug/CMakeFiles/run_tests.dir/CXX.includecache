@@ -58,6 +58,10 @@ iostream
 ShoppingList.h
 /Users/kepler/CLionProjects/untitled4/ShoppingList.h
 
+/Users/kepler/CLionProjects/untitled4/test/run_tests.cpp
+gtest/gtest.h
+-
+
 /Users/kepler/CLionProjects/untitled4/test/testing.cpp
 gtest/gtest.h
 -
@@ -74,7 +78,7 @@ gtest/gtest.h
 ../ShoppingList.cpp
 /Users/kepler/CLionProjects/untitled4/ShoppingList.cpp
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest-assertion-result.h
+/usr/local/include/gtest/gtest-assertion-result.h
 memory
 -
 ostream
@@ -84,16 +88,18 @@ string
 type_traits
 -
 gtest/gtest-message.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-message.h
+/usr/local/include/gtest/gtest/gtest-message.h
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-port.h
+/usr/local/include/gtest/gtest/internal/gtest-port.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest-death-test.h
+/usr/local/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-death-test-internal.h
+/usr/local/include/gtest/gtest/internal/gtest-death-test-internal.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest-matchers.h
+/usr/local/include/gtest/gtest-matchers.h
 atomic
+-
+functional
 -
 memory
 -
@@ -104,13 +110,13 @@ string
 type_traits
 -
 gtest/gtest-printers.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-printers.h
+/usr/local/include/gtest/gtest/gtest-printers.h
 gtest/internal/gtest-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-port.h
+/usr/local/include/gtest/gtest/internal/gtest-port.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest-message.h
+/usr/local/include/gtest/gtest-message.h
 limits
 -
 memory
@@ -122,21 +128,21 @@ sstream
 string
 -
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-port.h
+/usr/local/include/gtest/gtest/internal/gtest-port.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest-param-test.h
+/usr/local/include/gtest/gtest-param-test.h
 iterator
 -
 utility
 -
 gtest/internal/gtest-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-param-util.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-param-util.h
+/usr/local/include/gtest/gtest/internal/gtest-param-util.h
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-port.h
+/usr/local/include/gtest/gtest/internal/gtest-port.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest-printers.h
+/usr/local/include/gtest/gtest-printers.h
 functional
 -
 memory
@@ -157,14 +163,18 @@ utility
 -
 vector
 -
+absl/strings/internal/has_absl_stringify.h
+/usr/local/include/gtest/absl/strings/internal/has_absl_stringify.h
+absl/strings/str_cat.h
+/usr/local/include/gtest/absl/strings/str_cat.h
 gtest/internal/gtest-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-port.h
+/usr/local/include/gtest/gtest/internal/gtest-port.h
 gtest/internal/custom/gtest-printers.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/custom/gtest-printers.h
+/usr/local/include/gtest/gtest/internal/custom/gtest-printers.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest-test-part.h
+/usr/local/include/gtest/gtest-test-part.h
 iosfwd
 -
 ostream
@@ -174,19 +184,19 @@ string
 vector
 -
 gtest/internal/gtest-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-string.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-string.h
+/usr/local/include/gtest/gtest/internal/gtest-string.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest-typed-test.h
+/usr/local/include/gtest/gtest-typed-test.h
 gtest/internal/gtest-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-port.h
+/usr/local/include/gtest/gtest/internal/gtest-port.h
 gtest/internal/gtest-type-util.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-type-util.h
+/usr/local/include/gtest/gtest/internal/gtest-type-util.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest.h
+/usr/local/include/gtest/gtest.h
 cstddef
 -
 cstdint
@@ -210,45 +220,45 @@ type_traits
 vector
 -
 gtest/gtest-assertion-result.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-assertion-result.h
+/usr/local/include/gtest/gtest/gtest-assertion-result.h
 gtest/gtest-death-test.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-death-test.h
+/usr/local/include/gtest/gtest/gtest-death-test.h
 gtest/gtest-matchers.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-matchers.h
+/usr/local/include/gtest/gtest/gtest-matchers.h
 gtest/gtest-message.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-message.h
+/usr/local/include/gtest/gtest/gtest-message.h
 gtest/gtest-param-test.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-param-test.h
+/usr/local/include/gtest/gtest/gtest-param-test.h
 gtest/gtest-printers.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-printers.h
+/usr/local/include/gtest/gtest/gtest-printers.h
 gtest/gtest-test-part.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-test-part.h
+/usr/local/include/gtest/gtest/gtest-test-part.h
 gtest/gtest-typed-test.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-typed-test.h
+/usr/local/include/gtest/gtest/gtest-typed-test.h
 gtest/gtest_pred_impl.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest_pred_impl.h
+/usr/local/include/gtest/gtest/gtest_pred_impl.h
 gtest/gtest_prod.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest_prod.h
+/usr/local/include/gtest/gtest/gtest_prod.h
 gtest/internal/gtest-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-string.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-string.h
+/usr/local/include/gtest/gtest/internal/gtest-string.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest_pred_impl.h
+/usr/local/include/gtest/gtest_pred_impl.h
 gtest/gtest-assertion-result.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/gtest-assertion-result.h
+/usr/local/include/gtest/gtest/gtest-assertion-result.h
 gtest/internal/gtest-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest/internal/gtest-port.h
+/usr/local/include/gtest/gtest/internal/gtest-port.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/gtest_prod.h
+/usr/local/include/gtest/gtest_prod.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/custom/gtest-port.h
+/usr/local/include/gtest/internal/custom/gtest-port.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/custom/gtest-printers.h
+/usr/local/include/gtest/internal/custom/gtest-printers.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest-death-test-internal.h
+/usr/local/include/gtest/internal/gtest-death-test-internal.h
 stdio.h
 -
 memory
@@ -256,21 +266,21 @@ memory
 string
 -
 gtest/gtest-matchers.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/gtest-matchers.h
+/usr/local/include/gtest/internal/gtest/gtest-matchers.h
 gtest/internal/gtest-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-internal.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest-filepath.h
+/usr/local/include/gtest/internal/gtest-filepath.h
 string
 -
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-port.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-port.h
 gtest/internal/gtest-string.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-string.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-string.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/internal/gtest-internal.h
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-port.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-port.h
 stdlib.h
 -
 sys/types.h
@@ -308,15 +318,15 @@ utility
 vector
 -
 gtest/gtest-message.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/gtest-message.h
+/usr/local/include/gtest/internal/gtest/gtest-message.h
 gtest/internal/gtest-filepath.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-filepath.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-filepath.h
 gtest/internal/gtest-string.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-string.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-string.h
 gtest/internal/gtest-type-util.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-type-util.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-type-util.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest-param-util.h
+/usr/local/include/gtest/internal/gtest-param-util.h
 ctype.h
 -
 cassert
@@ -342,21 +352,21 @@ utility
 vector
 -
 gtest/gtest-printers.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/gtest-printers.h
+/usr/local/include/gtest/internal/gtest/gtest-printers.h
 gtest/gtest-test-part.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/gtest-test-part.h
+/usr/local/include/gtest/internal/gtest/gtest-test-part.h
 gtest/internal/gtest-internal.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-internal.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-internal.h
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-port.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-port.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest-port-arch.h
+/usr/local/include/gtest/internal/gtest-port-arch.h
 winapifamily.h
 -
 TargetConditionals.h
 -
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest-port.h
+/usr/local/include/gtest/internal/gtest-port.h
 ctype.h
 -
 stddef.h
@@ -398,15 +408,15 @@ AvailabilityMacros.h
 TargetConditionals.h
 -
 gtest/internal/custom/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/custom/gtest-port.h
+/usr/local/include/gtest/internal/gtest/internal/custom/gtest-port.h
 gtest/internal/gtest-port-arch.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-port-arch.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-port-arch.h
 absl/flags/declare.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/absl/flags/declare.h
+/usr/local/include/gtest/internal/absl/flags/declare.h
 absl/flags/flag.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/absl/flags/flag.h
+/usr/local/include/gtest/internal/absl/flags/flag.h
 absl/flags/reflection.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/absl/flags/reflection.h
+/usr/local/include/gtest/internal/absl/flags/reflection.h
 direct.h
 -
 io.h
@@ -420,9 +430,9 @@ unistd.h
 android/api-level.h
 -
 absl/strings/string_view.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/absl/strings/string_view.h
+/usr/local/include/gtest/internal/absl/strings/string_view.h
 re2/re2.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/re2/re2.h
+/usr/local/include/gtest/internal/re2/re2.h
 regex.h
 -
 typeinfo
@@ -436,23 +446,23 @@ condition_variable
 mutex
 -
 absl/types/any.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/absl/types/any.h
+/usr/local/include/gtest/internal/absl/types/any.h
 any
 -
 absl/types/optional.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/absl/types/optional.h
+/usr/local/include/gtest/internal/absl/types/optional.h
 optional
 -
 absl/strings/string_view.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/absl/strings/string_view.h
+/usr/local/include/gtest/internal/absl/strings/string_view.h
 string_view
 -
 absl/types/variant.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/absl/types/variant.h
+/usr/local/include/gtest/internal/absl/types/variant.h
 variant
 -
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest-string.h
+/usr/local/include/gtest/internal/gtest-string.h
 mem.h
 -
 string.h
@@ -464,9 +474,9 @@ sstream
 string
 -
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-port.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-port.h
 
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest-type-util.h
+/usr/local/include/gtest/internal/gtest-type-util.h
 string
 -
 type_traits
@@ -474,7 +484,7 @@ type_traits
 typeinfo
 -
 gtest/internal/gtest-port.h
-/usr/local/Cellar/googletest/1.13.0/include/gtest/internal/gtest/internal/gtest-port.h
+/usr/local/include/gtest/internal/gtest/internal/gtest-port.h
 cxxabi.h
 -
 acxx_demangle.h

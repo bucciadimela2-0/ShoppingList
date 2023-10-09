@@ -6,5 +6,5 @@ CXX_DEFINES = -DQT_CORE_LIB
 
 CXX_INCLUDES = -I/Users/kepler/CLionProjects/untitled4/cmake-build-debug/untitled4_autogen/include -isystem /opt/anaconda3/include/qt -isystem /opt/anaconda3/include/qt/QtCore -isystem /opt/anaconda3/./mkspecs/macx-clang
 
-CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -std=gnu++17
+CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fPIC -std=gnu++17
 

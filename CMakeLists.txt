@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.20)
+set(CMAKE_OSX_SYSROOT  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk")
 project(untitled4)
+
+
+
+# Sostituisci "/percorso/del/VulkanSDK" con il percorso effettivo del Vulkan SDK
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)

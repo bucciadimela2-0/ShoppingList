@@ -52,8 +52,8 @@
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/GoogleTest.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindPackageMessage.cmake",
-		"/usr/local/Cellar/googletest/1.13.0/lib/cmake/GTest/GTestConfigVersion.cmake",
-		"/usr/local/Cellar/googletest/1.13.0/lib/cmake/GTest/GTestConfig.cmake",
+		"/usr/local/lib/cmake/GTest/GTestConfigVersion.cmake",
+		"/usr/local/lib/cmake/GTest/GTestConfig.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeFindDependencyMacro.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindThreads.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CheckLibraryExists.cmake",
@@ -62,8 +62,8 @@
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/Internal/CheckSourceCompiles.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindPackageMessage.cmake",
-		"/usr/local/Cellar/googletest/1.13.0/lib/cmake/GTest/GTestTargets.cmake",
-		"/usr/local/Cellar/googletest/1.13.0/lib/cmake/GTest/GTestTargets-release.cmake"
+		"/usr/local/lib/cmake/GTest/GTestTargets.cmake",
+		"/usr/local/lib/cmake/GTest/GTestTargets-noconfig.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/kepler/CLionProjects/untitled4",
 	"DEP_FILE" : "",
@@ -82,7 +82,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/usr/local/Cellar/googletest/1.13.0/include",
+		"/usr/local/include",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1",
 		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include",

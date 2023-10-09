@@ -118,9 +118,9 @@ run_tests: CMakeFiles/run_tests.dir/run_tests_autogen/mocs_compilation.cpp.o
 run_tests: CMakeFiles/run_tests.dir/test/testing.cpp.o
 run_tests: CMakeFiles/run_tests.dir/test/run_tests.cpp.o
 run_tests: CMakeFiles/run_tests.dir/build.make
-run_tests: /usr/local/Cellar/googletest/1.13.0/lib/libgtest.a
-run_tests: /usr/local/Cellar/googletest/1.13.0/lib/libgtest_main.a
-run_tests: /usr/local/Cellar/googletest/1.13.0/lib/libgtest.a
+run_tests: /usr/local/lib/libgtest.a
+run_tests: /usr/local/lib/libgtest_main.a
+run_tests: /usr/local/lib/libgtest.a
 run_tests: CMakeFiles/run_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kepler/CLionProjects/untitled4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable run_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run_tests.dir/link.txt --verbose=$(VERBOSE)

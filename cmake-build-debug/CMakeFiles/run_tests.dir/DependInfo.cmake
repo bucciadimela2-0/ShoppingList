@@ -17,7 +17,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "run_tests_autogen/include"
-  "/usr/local/Cellar/googletest/1.13.0/include"
+  "/usr/local/include"
   )
 
 # The set of dependency files which are needed:
