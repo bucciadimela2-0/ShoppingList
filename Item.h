@@ -34,6 +34,7 @@ public:
     void setPurchased(bool isPurchased) { purchased = isPurchased; }
     int getQuantity() const { return quantity; }
 
+
 private:
     std::string name;
     Gruppo group;

@@ -11,15 +11,22 @@
 
 int main(int argc, char *argv[]) {
 
-    CreatorList creator;
-    std::unique_ptr<ShoppingList> shoppingList = creator.createList();
+    //CreatorList creator;
+    std::unique_ptr<ShoppingList> shoppingList = std::make_unique<ShoppingList>() ;
 
     std::string userName = "John";
     std::string userName2 = "Dalia";
 
 
-    std::unique_ptr<User> user = creator.createUser(shoppingList.get(), userName);
-    std::unique_ptr<User> user2 = creator.createUser(shoppingList.get(), userName2);
+
+    std::unique_ptr<User> user = std::make_unique<User>(shoppingList.get(), userName);
+    std::unique_ptr<User> user2 = std::make_unique<User>(shoppingList.get(), userName2);
+
+    shoppingList->addItem("Carote", Item::Gruppo::VERDURE,1);
+    shoppingList->addItem("Patate", Item::Gruppo::VERDURE, 10);
+    shoppingList->addItem("Cipolle", Item::Gruppo::VERDURE, 3);
+    shoppingList->addItem("Insalata", Item::Gruppo::VERDURE,1);
+    shoppingList->addItem("Pomodori",Item::Gruppo::VERDURE,10);
 
     Item item1("Latte", Item::Gruppo::BEVANDE, 2);
     Item item2("Pane", Item::Gruppo::FORNO, 1);

@@ -4,7 +4,6 @@ project(untitled4)
 
 
 
-# Sostituisci "/percorso/del/VulkanSDK" con il percorso effettivo del Vulkan SDK
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)

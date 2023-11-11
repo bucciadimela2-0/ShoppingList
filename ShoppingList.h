@@ -19,6 +19,8 @@ private:
     std::vector<Observer*> observers;
 
 public:
+
+    
     void addItem(const std::string& name, Item::Gruppo group, int quantity);
     void removeItem(int index);
     void markItemAsPurchased(int index);
