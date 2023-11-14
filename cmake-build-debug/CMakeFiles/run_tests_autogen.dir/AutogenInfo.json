@@ -72,7 +72,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/kepler/CLionProjects/untitled4/cmake-build-debug/run_tests_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/kepler/CLionProjects/untitled4/cmake-build-debug/run_tests_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -82,7 +82,11 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/kepler/CLionProjects/untitled4",
 		"/usr/local/include",
+		"/opt/anaconda3/include/qt",
+		"/opt/anaconda3/include/qt/QtCore",
+		"/opt/anaconda3/mkspecs/macx-clang",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1",
 		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include",
 		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include",
@@ -116,8 +120,7 @@
 			"/Users/kepler/CLionProjects/untitled4/test/run_tests.cpp",
 			"MU",
 			null
-		],
-		[ "/Users/kepler/CLionProjects/untitled4/test/testing.cpp", "MU", null ]
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

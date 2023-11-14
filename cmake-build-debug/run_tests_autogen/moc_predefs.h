@@ -1,3 +1,4 @@
+#define QT_CORE_LIB 1
 #define SIZEOF_DPTR (sizeof(void*))
 #define _LP64 1
 #define __APPLE_CC__ 6000

@@ -6,9 +6,11 @@
 #define UNTITLED2_OBSERVER_H
 
 
+#include "ShoppingList.h"
+
 class Observer {
     public:
-        virtual void update() = 0;
+        virtual void update(std::string name) = 0;
         virtual ~Observer() = default;
 };
 

@@ -25,7 +25,7 @@ public:
         ALTRO
     };
 
-    Item(const std::string name, Gruppo group, int quantity, bool purchased = false)
+    Item(const std::string& name, Gruppo group, int quantity, bool purchased = false)
             : name(name), group(group), quantity(quantity), purchased(purchased) {}
 
     const std::string getName() const { return name; }

@@ -13,26 +13,28 @@
 
 class ShoppingList : public Subject {
 
+    private:
+        std::vector<std::shared_ptr<Item>> items;
+        std::vector<std::shared_ptr<Observer>> observers;
+        std::string name;
 
-private:
-    std::vector<Item> items;
-    std::vector<Observer*> observers;
+    public:
+        ShoppingList(const std::string& name) : name(name) {};
 
-public:
-
-    
-    void addItem(const std::string& name, Item::Gruppo group, int quantity);
-    void removeItem(int index);
-    void markItemAsPurchased(int index);
-    void attach(Observer* observer);
-    void detach(Observer* observer);
-    void notify();
-    const std::vector<Item>& getItems() const;
-    int getSize() const;
-    int getObserverCount() const;
-
-    const Item &getItem(int index) const;
+        void addItem(const Item& item);
+        void removeItem(int index);
+        void itemPurchased(int index);
+        void attach(std::shared_ptr<Observer> observer) override;
+        void detach(std::shared_ptr<Observer> observer) override;
+        void notify() override;
+        const std::vector<std::shared_ptr<Item>>& getItems() const;
+        int getSize() const;
+        std::string getListName() const;
+        int getUnboughtQuantity() const;
+        const std::shared_ptr<Item>& getItem(int index) const;
+        std::vector<std::shared_ptr<Observer>> getObserver();
 };
+
 
 
 

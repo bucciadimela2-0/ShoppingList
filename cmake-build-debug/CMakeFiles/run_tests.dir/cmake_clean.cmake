@@ -4,7 +4,6 @@ file(REMOVE_RECURSE
   "run_tests_autogen"
   "CMakeFiles/run_tests.dir/run_tests_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/run_tests.dir/test/run_tests.cpp.o"
-  "CMakeFiles/run_tests.dir/test/testing.cpp.o"
   "run_tests"
   "run_tests.pdb"
 )

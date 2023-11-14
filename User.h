@@ -10,26 +10,29 @@
 #include <iostream>
 #include "ShoppingList.h"
 
-class User : public Observer {
+class User : public Observer, public std::enable_shared_from_this<User>{
 private:
-    ShoppingList* lista;
+    std::vector<std::shared_ptr<ShoppingList>> liste;
     std::string name;
 
 public:
-    User(ShoppingList* lista, const std::string& name);
+    User(const std::string& name);
     ~User();
 
-    void update() override;
+    void update(std::string listName) override;
 
-    void displayList() const;
-    void markItemAsPurchased(int index);
-    void addItems(ShoppingList& lista,const Item& item);
-    void removeItem(ShoppingList& lista, int index);
-    void createList(ShoppingList& lista, const std::vector<Item>& elementi);
+    void displayList(std::shared_ptr<ShoppingList> lista) const;
+    void itemPurchased(std::shared_ptr<ShoppingList> lista, int index);
+    static void addItems(std::shared_ptr<ShoppingList> lista,const Item& item);
+    void removeItem(std::shared_ptr<ShoppingList> lista, int index);
+    void createList(std::shared_ptr<ShoppingList> lista, const std::vector<Item>& elementi);
+    void addNewList(std::shared_ptr<ShoppingList> lista);
+    void removeList(std::shared_ptr<ShoppingList> lista);
 
-    std::string getName();
+
+
+
 };
-
 
 
 
