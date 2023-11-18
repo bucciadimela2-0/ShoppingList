@@ -12,7 +12,7 @@
 
 class User : public Observer, public std::enable_shared_from_this<User>{
 private:
-    std::vector<std::shared_ptr<ShoppingList>> liste;
+    std::vector<ShoppingList*> liste;
     std::string name;
 
 public:
@@ -21,14 +21,16 @@ public:
 
     void update(std::string listName) override;
 
-    void displayList(std::shared_ptr<ShoppingList> lista) const;
-    void itemPurchased(std::shared_ptr<ShoppingList> lista, int index);
-    static void addItems(std::shared_ptr<ShoppingList> lista,const Item& item);
-    void removeItem(std::shared_ptr<ShoppingList> lista, int index);
-    void createList(std::shared_ptr<ShoppingList> lista, const std::vector<Item>& elementi);
-    void addNewList(std::shared_ptr<ShoppingList> lista);
-    void removeList(std::shared_ptr<ShoppingList> lista);
-
+    void displayList(const ShoppingList* lista) const;
+    void itemPurchased(ShoppingList* lista, int index);
+    static void addItems(ShoppingList* lista,const Item& item);
+    void removeItem(ShoppingList* lista, int index);
+    void createList(ShoppingList* lista, const std::vector<Item>& elementi);
+    void addNewList(ShoppingList* lista);
+    void removeList(ShoppingList* lista);
+    int getNumShoppingList(){return liste.size();}
+    void getAllShoppingList();
+    std::string getUserName(){return name;}
 
 
 

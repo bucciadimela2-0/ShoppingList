@@ -12,13 +12,13 @@ protected:
     void SetUp() override {
         // Inizializzazione comune per i test, crea una nuova ShoppingList e User per ogni test
 
-        std::shared_ptr<ShoppingList>shoppingList = std::make_shared<ShoppingList>(std::string("lista1"));
-        std::shared_ptr<User> user = std::make_shared<User>("dalia");
-        user->addNewList(shoppingList);
+        ShoppingList shoppingList(std::string("lista1"));
+        User user("dalia");
+        user.addNewList(&shoppingList);
     }
 
-    std::shared_ptr<ShoppingList> shoppingList = std::make_shared<ShoppingList>(std::string("lista1"));
-    std::shared_ptr<User> user = std::make_shared<User>("dalia");
+    ShoppingList shoppingList = ShoppingList(std::string("lista1"));
+    User user = User("dalia");
 
 };
 
@@ -26,16 +26,16 @@ protected:
 TEST_F(UserTest, UpdateTest) {
     Item item1("Latte", Item::Gruppo::BEVANDE, 2);
     Item item2("Pane", Item::Gruppo::FORNO, 1);
-    user->addNewList(shoppingList);
+    user.addNewList(&shoppingList);
     // Aggiungi alcuni elementi alla ShoppingList
-    shoppingList->addItem(item1);
-    shoppingList->addItem(item2);
+    shoppingList.addItem(item1);
+    shoppingList.addItem(item2);
 
     // Cattura l'output della funzione update()
     ::testing::internal::CaptureStdout();
 
     // Richiama la funzione update() di User
-    user->update(shoppingList->getListName());
+    user.update(shoppingList.getListName());
 
     // Ottieni l'output catturato
     std::string output = ::testing::internal::GetCapturedStdout();
@@ -53,15 +53,15 @@ TEST_F(UserTest, UnboughtProductTest){
 
     Item item1("Latte", Item::Gruppo::BEVANDE, 2);
     Item item2("Pane", Item::Gruppo::FORNO, 1);
-    user->addNewList(shoppingList);
+    user.addNewList(&shoppingList);
 // Aggiungi alcuni elementi alla ShoppingList
-    shoppingList->addItem(item1);
-    shoppingList->addItem(item2);
-    ASSERT_EQ(shoppingList->getUnboughtQuantity(), 2);
+    shoppingList.addItem(item1);
+    shoppingList.addItem(item2);
+    ASSERT_EQ(shoppingList.getUnboughtQuantity(), 2);
 
     // Segna l'elemento con indice 0 come acquistato
-    user->itemPurchased(shoppingList, 0);
-    ASSERT_EQ(shoppingList->getUnboughtQuantity(), 1);
+    user.itemPurchased(&shoppingList, 0);
+    ASSERT_EQ(shoppingList.getUnboughtQuantity(), 1);
 
 
 
@@ -72,16 +72,16 @@ TEST_F(UserTest, MarkItemAsPurchasedTest) {
 
     Item item1("Latte", Item::Gruppo::BEVANDE, 2);
     Item item2("Pane", Item::Gruppo::FORNO, 1);
-    user->addNewList(shoppingList);
+    user.addNewList(&shoppingList);
 // Aggiungi alcuni elementi alla ShoppingList
-shoppingList->addItem(item1);
-shoppingList->addItem(item2);
+shoppingList.addItem(item1);
+shoppingList.addItem(item2);
 
 // Segna l'elemento con indice 0 come acquistato
-user->itemPurchased(shoppingList, 0);
+user.itemPurchased(&shoppingList, 0);
 
 // Assert che l'elemento sia stato segnato come acquistato correttamente
-ASSERT_TRUE(shoppingList->getItem(0)->isPurchased());
+ASSERT_TRUE(shoppingList.getItem(0).isPurchased());
 }
 
 // Test per User::addItems()
@@ -89,17 +89,17 @@ TEST_F(UserTest, AddItemsTest) {
 
     Item item1("Latte", Item::Gruppo::BEVANDE, 2);
     Item item2("Pane", Item::Gruppo::FORNO, 1);
-    user->addNewList(shoppingList);
+    user.addNewList(&shoppingList);
 // Aggiungi alcuni elementi alla ShoppingList
-shoppingList->addItem(item1);
-shoppingList->addItem(item2);
+shoppingList.addItem(item1);
+shoppingList.addItem(item2);
 
 // Aggiungi un nuovo elemento alla ShoppingList utilizzando User::addItems()
 Item newItem("Biscotti", Item::Gruppo::DOLCI, 3);
-user->addItems(shoppingList, newItem);
+user.addItems(&shoppingList, newItem);
 
 // Assert che il nuovo elemento sia stato aggiunto correttamente alla lista
-ASSERT_EQ(shoppingList->getSize(), 3);
+ASSERT_EQ(shoppingList.getSize(), 3);
 }
 
 // Test per User::removeItem()
@@ -107,14 +107,37 @@ TEST_F(UserTest, RemoveItemTest) {
 // Aggiungi alcuni elementi alla ShoppingList
     Item item1("Latte", Item::Gruppo::BEVANDE, 2);
     Item item2("Pane", Item::Gruppo::FORNO, 1);
-    user->addNewList(shoppingList);
-    shoppingList->addItem(item1);
-    shoppingList->addItem(item2);
+    user.addNewList(&shoppingList);
+    shoppingList.addItem(item1);
+    shoppingList.addItem(item2);
 
 // Rimuovi l'elemento con indice 1 dalla ShoppingList utilizzando User::removeItem()
-user->removeItem(shoppingList, 1);
+user.removeItem(&shoppingList, 1);
 
 // Assert che l'elemento sia stato rimosso correttamente dalla lista
-ASSERT_EQ(shoppingList->getSize(), 1);
+ASSERT_EQ(shoppingList.getSize(), 1);
 }
 
+
+// Test per User::removeItem()
+TEST_F(UserTest, RemoveAndAddListTest) {
+// Aggiungi alcuni elementi alla ShoppingList
+    Item item1("Latte", Item::Gruppo::BEVANDE, 2);
+    Item item2("Pane", Item::Gruppo::FORNO, 1);
+    user.addNewList(&shoppingList);
+    shoppingList.addItem(item1);
+    shoppingList.addItem(item2);
+
+    ShoppingList shoppingList2(std::string("lista2"));
+    user.addNewList(&shoppingList2);
+    shoppingList2.addItem(item1);
+    shoppingList2.addItem(item2);
+
+    ASSERT_EQ( user.getNumShoppingList(),2);
+
+// Rimuovi l'elemento con indice 1 dalla ShoppingList utilizzando User::removeItem()
+    user.removeList(&shoppingList2);
+
+// Assert che l'elemento sia stato rimosso correttamente dalla lista
+    ASSERT_EQ(user.getNumShoppingList(), 1);
+}

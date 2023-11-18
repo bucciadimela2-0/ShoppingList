@@ -14,8 +14,8 @@
 class ShoppingList : public Subject {
 
     private:
-        std::vector<std::shared_ptr<Item>> items;
-        std::vector<std::shared_ptr<Observer>> observers;
+        std::vector<Item> items;
+        std::vector<Observer*> observers;
         std::string name;
 
     public:
@@ -24,15 +24,16 @@ class ShoppingList : public Subject {
         void addItem(const Item& item);
         void removeItem(int index);
         void itemPurchased(int index);
-        void attach(std::shared_ptr<Observer> observer) override;
-        void detach(std::shared_ptr<Observer> observer) override;
+        void attach(Observer* observer) override;
+        void detach(Observer* observer) override;
         void notify() override;
-        const std::vector<std::shared_ptr<Item>>& getItems() const;
+        const std::vector<Item>& getItems() const;
         int getSize() const;
         std::string getListName() const;
         int getUnboughtQuantity() const;
-        const std::shared_ptr<Item>& getItem(int index) const;
-        std::vector<std::shared_ptr<Observer>> getObserver();
+        const Item& getItem(int index) const;
+        std::vector<Observer *> getObserver();
+
 };
 
 
