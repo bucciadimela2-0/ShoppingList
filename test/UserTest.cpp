@@ -82,6 +82,7 @@ user.itemPurchased(&shoppingList, 0);
 
 // Assert che l'elemento sia stato segnato come acquistato correttamente
 ASSERT_TRUE(shoppingList.getItem(0).isPurchased());
+ASSERT_EQ(shoppingList.getUnboughtQuantity(), 1);
 }
 
 // Test per User::addItems()

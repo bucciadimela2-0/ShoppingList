@@ -23,7 +23,7 @@ public:
 
     void displayList(const ShoppingList* lista) const;
     void itemPurchased(ShoppingList* lista, int index);
-    static void addItems(ShoppingList* lista,const Item& item);
+    void addItems(ShoppingList* lista,const Item& item);
     void removeItem(ShoppingList* lista, int index);
     void createList(ShoppingList* lista, const std::vector<Item>& elementi);
     void addNewList(ShoppingList* lista);

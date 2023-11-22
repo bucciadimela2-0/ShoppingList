@@ -33,6 +33,7 @@ TEST_F(ShoppingListTest, AddItem) {
     shoppingList.addItem(item4);
 
     ASSERT_EQ(shoppingList.getSize(), 4);
+    ASSERT_EQ(shoppingList.getUnboughtQuantity(), 4);
 }
 
 // Test per removeItem
@@ -40,10 +41,12 @@ TEST_F(ShoppingListTest, RemoveItem) {
 // Rimuovi un elemento esistente
 shoppingList.removeItem(1);
 ASSERT_EQ(shoppingList.getSize(), 2);
+ASSERT_EQ(shoppingList.getUnboughtQuantity(), 2);
 
 // Rimuovi un elemento non esistente
 shoppingList.removeItem(10);
 ASSERT_EQ(shoppingList.getSize(), 2);
+ASSERT_EQ(shoppingList.getUnboughtQuantity(), 2);
 }
 
 // Test per itemPurchased
@@ -51,6 +54,7 @@ TEST_F(ShoppingListTest, MarkItemAsPurchased) {
 // Segna un elemento esistente come acquistato
 shoppingList.itemPurchased(0);
 ASSERT_TRUE(shoppingList.getItems()[0].isPurchased());
+ASSERT_EQ(shoppingList.getUnboughtQuantity(), 2);
 }
 
 // Test per attach e detach
